@@ -1,0 +1,14 @@
+<li [ngClass]="{'list-group-item': true,
+    'list-group-item-success': articleLoveIts > 0 ,
+    'list-group-item-danger': articleLoveIts < 0}">
+    <div class="row">
+        <p class="col-xs-8 h2 font-weight-bold">{{articleTitle}}</p>
+        <p class="col-xs-4 h4 pull-right">
+              {{articleDate | date : "MM/dd/yyyy, hh:mm aa"}}
+        </p>
+    </div>
+    <div>{{articleContent}}</div>
+    <br>
+    <div class="btn btn-success" (click)="onCalculateLoveIt(1)">Love It</div>
+    <div class="btn btn-danger" (click)="onCalculateLoveIt(-1)">Don't Love It </div>
+</li>
