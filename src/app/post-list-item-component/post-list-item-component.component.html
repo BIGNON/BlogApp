@@ -2,8 +2,8 @@
     'list-group-item-success': articleLoveIts > 0 ,
     'list-group-item-danger': articleLoveIts < 0}">
     <div class="row">
-        <p class="col-xs-8 h2 font-weight-bold">{{articleTitle}}</p>
-        <p class="col-xs-4 h4 pull-right">
+        <p class="col-xs-8 articleTitle">{{articleTitle}}</p>
+        <p class="col-xs-4 articleDate">
               {{articleDate | date : "MM/dd/yyyy, hh:mm aa"}}
         </p>
     </div>
